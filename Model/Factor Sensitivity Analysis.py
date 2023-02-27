@@ -173,14 +173,14 @@ Baseline_RS = scenario_function(Cont_Scen_no=1, RSTrad = True)
 Baseline_FPSTrad = scenario_function(Cont_Scen_no=1, FPSTrad = True)
 Baseline_CS = scenario_function(Cont_Scen_no=1, CSampling = True)
 
-Baseline_washing = scenario_function(Cont_Scen_no=1,Washing = True)
-Baseline_washing_PHS4D = scenario_function(Cont_Scen_no=1,Washing = True,PHS4d = True)
-Baseline_washing_PHS4h = scenario_function(Cont_Scen_no=1,Washing = True,PHS4h = True)
-Baseline_washing_PHSInt = scenario_function(Cont_Scen_no=1,Washing = True,PHSInt = True)
-Baseline_washing_HS = scenario_function(Cont_Scen_no=1,Washing = True,HSTrad  = True)
-Baseline_washing_RS = scenario_function(Cont_Scen_no=1,Washing = True,RSTrad = True)
-Baseline_washing_FPS = scenario_function(Cont_Scen_no=1,Washing = True,FPSTrad = True)
-Baseline_washing_CS = scenario_function(Cont_Scen_no=1,Washing = True,CSampling = True)
+Baseline_washing = scenario_function(Cont_Scen_no=1, Holding=True, Pre_Cooling = True, PreS_Wash=True, Sanitation = True )
+Baseline_washing_PHS4D = scenario_function(Cont_Scen_no=1,Holding=True, Pre_Cooling = True, PreS_Wash=True, Sanitation = True ,PHS4d = True)
+Baseline_washing_PHS4h = scenario_function(Cont_Scen_no=1,Holding=True, Pre_Cooling = True, PreS_Wash=True, Sanitation = True ,PHS4h = True)
+Baseline_washing_PHSInt = scenario_function(Cont_Scen_no=1,Holding=True, Pre_Cooling = True, PreS_Wash=True, Sanitation = True ,PHSInt = True)
+Baseline_washing_HS = scenario_function(Cont_Scen_no=1,Holding=True, Pre_Cooling = True, PreS_Wash=True, Sanitation = True ,HSTrad  = True)
+Baseline_washing_RS = scenario_function(Cont_Scen_no=1,Holding=True, Pre_Cooling = True, PreS_Wash=True, Sanitation = True ,RSTrad = True)
+Baseline_washing_FPS = scenario_function(Cont_Scen_no=1,Holding=True, Pre_Cooling = True, PreS_Wash=True, Sanitation = True ,FPSTrad = True)
+Baseline_washing_CS = scenario_function(Cont_Scen_no=1,Holding=True, Pre_Cooling = True, PreS_Wash=True, Sanitation = True ,CSampling = True)
 
 Baseline_Holding = scenario_function(Cont_Scen_no=1,Washing = True,Pre_Cooling = True, PreS_Wash=True, Sanitation = True)
 Baseline_Holding_PHS4D = scenario_function(Cont_Scen_no=1,Washing = True,Pre_Cooling = True, PreS_Wash=True, Sanitation = True,PHS4d = True)
@@ -309,7 +309,7 @@ FSdf= pd.DataFrame({
     })
 
 
-FSdf.to_csv(path_or_buf = "C:\\Users\\gareyes3\\Box\\CPS Project- Farm to Facility\\Papers\\CSV Data\\Review 2\\FSdf-Final.csv") 
+FSdf.to_csv(path_or_buf = "C:\\Users\\gareyes3\\Box\\CPS Project- Farm to Facility\\Papers\\CSV Data\\Review 2\\FSdf-Final-1-5.csv") 
 #FSdf.to_csv(path_or_buf = "C:\\Users\\gareyes3\\Box Sync\\CPS Project- Farm to Facility\\Papers\\CSV Data\\FSdf-Final.csv") 
     
 
