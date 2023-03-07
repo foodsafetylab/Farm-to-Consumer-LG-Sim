@@ -1,11 +1,16 @@
-# Farm-to-Consumer-LG-Sim
+# Farm to Facility Process Model
+	This is a Process model for leafy greens created by the Stasiewicz Lab at the University of Illinois Urbana-Champaign. 
 
-Funding for Project was made possible by The Center for Produce Safety project 2021CPS10. 
-Any opinions, findings, conclusions, or recommendations expressed in this publication (or audiovisual) are those of the author(s) and do not necessarily reflect the view of The Center for Produce Safety. 
-(https://www.centerforproducesafety.org/). 
+## Goal
+	The goal of this model is to assess the effect of test-and-reject sampling plans in the context of differenr process systems. 
 
-This repository contains the files used to develop the farm to facility simulation
+## How to Use
+	The main repository contains a word document with intruction on the basic use of the model. "Model Files Explanation.doc"
 
-The word document Model Files Explaination.doc contains infromation relevant to the use of the model. 
+## Raw model data
+	The raw model data for all scenarios is contained will be shared upon request as it is too large to post in github.. The data "Combined Data 147 Scenarios.spydata" contains the data for all 147 scenarios. Use the file MarginalGains_Baseline.py to obtain the results. 
+	The already processed csv files are found in the outer folder title CSV Files for Plots. Use the "Final Plots in R" Scrcipt to reproduce the plots from the already processed data. 
 
-for further information please contact Dr. Matthew Stasiewicz mstasie@illinois.edu
+## Summary Excel Files
+
+	The main repository file contains a summary excel file for the relative efficact data and the power data. Use this to reference the figures in the paper and the supplemental materials. 
